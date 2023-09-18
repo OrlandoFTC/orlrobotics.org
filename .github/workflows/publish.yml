@@ -23,17 +23,18 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        working-directory: ./site
         with:
           node-version: "20"
           cache: npm
 
       - name: Install Dependencies
+        working-directory: ./site
         run: npm ci
 
       - name: Run Tailwind
-        run: |
-          cd site/
-          npx tailwind --input style.css --output dist/style.css --watch --minify
+        working-directory: ./site
+        run: npx tailwind --input style.css --output dist/style.css --watch --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
