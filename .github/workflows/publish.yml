@@ -34,7 +34,9 @@ jobs:
 
       - name: Run Tailwind
         working-directory: ./site
-        run: npx tailwind --input style.css --output dist/style.css --watch --minify
+        run: |
+          mkdir -p dist/
+          npx tailwind --input style.css --output dist/style.css --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
