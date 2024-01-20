@@ -7,36 +7,82 @@
     <link rel="stylesheet" href="dist/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet"> 
   </head>
-  <body>
-    <header class="border-b max-w-xl mx-auto pt-12 px-4 py-4">
-      <h1 class="font-semibold mb-8 text-xl">Orlando Robotics Foundation <span class="font-light italic text-sm">Inc.</span></h1>
-      <p><em>Educating students in the areas of science, technology, engineering, mathematics, and the arts, and supporting educational robotics programs in the state of Florida.</em></p>
+  <body class="bg-orange-50">
+    <header class="py-12 px-4" style="background-image: url('images/header.jpg'); background-size: cover; background-position-y: center;">
+      <div class="p-8 max-w-md w-full" style="background-image: radial-gradient(closest-side, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.5) 75%, transparent);">
+        <a class="block w-full" href="/"><img alt="Orlando Robotics Foundation" src="/images/orf.svg" class="w-full" /></a>
+      </div>
     </header>
-    <main class="max-w-xl mx-auto">
-      <section class="border-b p-4">
-        <p class="mb-4">
-          This website is a placeholder for the Orlando Robotics Foundation, a non-profit organization focused on the education of middle- and high-school students using robotics programs.
-        </p>
-        <p class="mb-4">
-          If you would like to support the work of the organization, please contact us at <a class="underline" href="mailto:donate@orlandoroboticsleague.com">this address</a>.
-        </p>
-        <p>
-          You can find all of this organization's publicly-disclosed documents <a class="underline" href="https://github.com/OrlandoFTC/orlrobotics.com/blob/main/Documents/">here</a>.
-          If you believe a document is missing and would like to view it, please <a class="underline" href="mailto:donate@orlandoroboticsleague.com">contact us</a>.
-        </p>
+    <main>
+      <section class="flex flex-wrap gap-8 items-center justify-around px-8 py-24" style="background-image: linear-gradient(to bottom right, transparent 25%, rgba(249, 115, 22, 0.5));">
+        <article class="max-w-2xl text-lg">
+          <p class="mb-8">
+            Orlando Robotics Foundation, Inc. is a 501(c)(3) non-profit organization focused on middle- and high-school STEM education using youth robotics programs.
+          </p>
+          <p class="mb-8">
+            We know that the best way to learn is by <strong>doing</strong>, with hands-on experiences and an atmosphere that gets students excited about learning.
+            That's why we support educational robotics through <a href="https://firstinspires.org" class="text-orange-500 underline"><em>FIRST®</em></a> and their <a href="https://www.firstinspires.org/robotics/ftc" class="text-orange-500 underline"><em>FIRST</em> Tech Challenge</a> program.
+          </p>
+          <p class="mb-16">
+            Want to see it in action? Check out <a href="https://www.youtube.com/live/XmKD86KZpCY?si=FRGdF_vYfXe6G9FC&t=11137" class="text-orange-500 underline">a match from one of our events</a>.
+          </p>
+          <p class="mb-16">
+            <a href="https://donate.stripe.com/eVa8A63oQ0drcF2aEE" class="bg-orange-500 font-bold mb-4 mr-4 px-4 py-2 rounded text-white transition-colors hover:bg-orange-400">Support Our Mission</a>
+            <a href="mailto:donate@orlrobotics.org" class="border-2 border-orange-500 font-bold px-4 py-2 rounded text-orange-500 transition-colors hover:border-orange-400 hover:text-orange-400">Partner With Us</a>
+          </p>
+        </article>
+        <article class="max-w-2xl">
+          <h3 class="font-bold text-lg text-orange-500">Our Mission:</h3>
+          <blockquote class="italic text-3xl">
+            Educating students in the areas of science, technology, engineering, mathematics, and the arts, and supporting educational robotics programs in the state of Florida.
+          </blockquote>
+        </article>
       </section>
-      <section class="border-b p-4">
+      <section class="flex flex-wrap gap-8 items-center justify-around px-8 py-24" style="background-image: url('/images/bg.jpg'); background-size: cover; background-position: center;">
+        <article class="max-w-2xl text-lg">
+          <h2 class="font-bold mb-16 text-2xl">How does it work?</h2>
+          <p class="mb-8">
+            We focus on amplifying the impact of existing robotics programs in Central Florida.
+            This includes <strong>organizing</strong> events, <strong>mentoring</strong> teams, <strong>recruiting</strong> volunteers, and <strong>managing</strong> finances.
+          </p>
+          <p class="mb-16">
+            Every season provides a new challenge for the students.
+            Every team provides a diverse set of opportunities for students to learn.
+            Every event is a celebration of the students' hard work.
+          </p>
+          <p class="mb-16">
+            <a href="https://www.youtube.com/playlist?list=PLEuGrYl8iBm7pUMY51Hk3EINgJTy7bzns" target="blank" class="border-2 border-orange-500 font-bold px-4 py-2 rounded text-orange-500 transition-colors hover:border-orange-400 hover:text-orange-400">See the Challenges</a>
+          </p>
+        </article>
+        <article class="max-w-2xl">
+          <ul class="list-disc text-lg">
+            <li class="mb-4"><a href="https://firstinspires.org" class="text-orange-500 underline"><em>FIRST</em></a> is a worldwide organization, founded by Dean Kamen, focused on STEM education through youth robotics programs.</li>
+            <li class="mb-4"><a href="https://www.firstinspires.org/robotics/ftc" class="text-orange-500 underline"><em>FIRST</em> Tech Challenge</a> is a program for middle- and high-school students with seasons running from September to April.</li>
+            <li>With the help of partner organizations, sponsors, and local volunteers, we facilitate <em>FIRST</em> Tech Challenge events in Central Florida.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="max-w-4xl mx-auto px-8 py-24">
+        <p class="mb-4">
+          We believe in the highest standards of transparency and accountability.
+          You can find all of this organization's publicly-disclosed documents <a class="underline" href="https://github.com/OrlandoFTC/orlrobotics.org/blob/main/Documents/">here</a>.
+          If you believe a document is missing and would like to view it, please <a class="underline" href="mailto:donate@orlrobotics.org">contact us</a>.
+        </p>
         <p class="mb-4">Below are direct links to a few of the most commonly-requested documents:</p>
         <ul class="list-disc pl-8">
-          <li class="italic underline"><a href="https://raw.githubusercontent.com/OrlandoFTC/orlrobotics.com/main/Documents/2023-08-16%20Articles%20of%20Incorporation.pdf">Articles of Incorporation</a></li>
-          <li class="italic underline"><a href="https://raw.githubusercontent.com/OrlandoFTC/orlrobotics.com/main/Documents/2023-10-05%20IRS%20Determination%20Letter.pdf">IRS Determination Letter of Non-Profit Status</a></li>
+          <li class="italic underline"><a href="https://raw.githubusercontent.com/OrlandoFTC/orlrobotics.org/main/Documents/2023-08-16%20Articles%20of%20Incorporation.pdf">Articles of Incorporation</a></li>
+          <li class="italic underline"><a href="https://raw.githubusercontent.com/OrlandoFTC/orlrobotics.org/main/Documents/2023-10-05%20IRS%20Determination%20Letter.pdf">IRS Determination Letter of Non-Profit Status</a></li>
         </ul>
       </section>
     </main>
-    <footer>
-      
+    <footer class="bg-stone-900 py-8 text-center text-white">
+      <div class="max-w-3xl mx-auto">
+        <p class="mb-4 text-sm">Orlando Robotics Foundation, Inc. is a non-profit organization that is tax-exempt under Internal Revenue Code Section 501(c)(3). Our tax ID is 93-3399286.</p>
+        <p class="text-sm"><em>FIRST<sup>®</sup></em> and <em>FIRST<sup>®</sup></em> Tech Challenge (formerly also known as FTC<sup>®</sup>) are trademarks of For Inspiration and Recognition of Science and Technology (<em>FIRST<sup>®</sup></em>). </p>
+      </div>
     </footer>
   </body>
 </html>
+
